@@ -51,7 +51,7 @@ import {Row, Col} from './components/grid';
 import {Select, Option, OptionGroup} from './components/select';
 import locale from './locale';
 
-const iview = {
+const vui = {
     Affix,
     Alert,
     AutoComplete,
@@ -133,8 +133,8 @@ const install = function(Vue, opts = {}) {
     locale.use(opts.locale);
     locale.i18n(opts.i18n);
 
-    Object.keys(iview).forEach(key => {
-        Vue.component(key, iview[key]);
+    Object.keys(vui).forEach(key => {
+        Vue.component(key, vui[key]);
     });
 
     Vue.prototype.$Loading = LoadingBar;
@@ -149,4 +149,4 @@ if (typeof window !== 'undefined' && window.Vue) {
     install(window.Vue);
 }
 
-module.exports = Object.assign(iview, {install}); // eslint-disable-line no-undef
+module.exports = Object.assign(vui, {install}); // eslint-disable-line no-undef

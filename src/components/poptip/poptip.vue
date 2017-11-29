@@ -23,6 +23,7 @@
                 :data-transfer="transfer"
                 v-transfer-dom>
                 <div :class="[prefixCls + '-content']">
+                    <div :class="[prefixCls + '-arrow', prefixCls + '-arrow-big']"></div>
                     <div :class="[prefixCls + '-arrow']"></div>
                     <div :class="[prefixCls + '-inner']" v-if="confirm">
                         <div :class="[prefixCls + '-body']">

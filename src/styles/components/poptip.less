@@ -2,6 +2,7 @@
 @poptip-arrow: ~"@{poptip-prefix-cls}-arrow";
 @poptip-max-width: 250px;
 @poptip-arrow-width: 5px;
+@tooltip-arrow-big-width: 6px;
 @poptip-arrow-outer-width: (@poptip-arrow-width + 1);
 @poptip-distance: @poptip-arrow-width - 1 + 4;
 //@poptip-arrow-color: fadein(@border-color-base, 5%);
@@ -62,7 +63,7 @@
     &-popper{
         min-width: 150px;
         font-size: @font-size-small;
-        .popper(@poptip-arrow, @poptip-arrow-width, @poptip-distance, @poptip-arrow-color);
+        .popper(@poptip-arrow, @poptip-arrow-width, @tooltip-arrow-big-width, @poptip-distance, @poptip-arrow-color);
 
         &[x-placement^="top"] .@{poptip-arrow}:after {
             content: " ";

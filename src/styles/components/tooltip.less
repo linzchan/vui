@@ -2,6 +2,7 @@
 @tooltip-arrow: ~"@{tooltip-prefix-cls}-arrow";
 @tooltip-max-width: 250px;
 @tooltip-arrow-width: 5px;
+@tooltip-arrow-big-width: 6px;
 @tooltip-distance: @tooltip-arrow-width - 1 + 4;
 
 .@{tooltip-prefix-cls} {
@@ -13,7 +14,7 @@
     }
 
     &-popper{
-        .popper(@tooltip-arrow, @tooltip-arrow-width, @tooltip-distance, @tooltip-bg);
+        .popper(@tooltip-arrow, @tooltip-arrow-width, @tooltip-arrow-big-width, @tooltip-distance, @tooltip-bg);
     }
 
     &-inner{

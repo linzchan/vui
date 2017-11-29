@@ -3,16 +3,17 @@
 @css-prefix-iconfont    : ivu-icon;
 
 // Color
-@primary-color          : #2d8cf0;
-@info-color             : #2db7f5;
-@success-color          : #19be6b;
-@warning-color          : #ff9900;
-@error-color            : #ed3f14;
-@link-color             : #2D8cF0;
+@primary-color          : #009ACE; // vui
+@info-color             : #08ABE2; // vui
+@success-color          : #00cc66; // vui
+@warning-color          : #FF6D00; // vui
+@error-color            : #FF6D00; // vui
+@link-color             : #3366CC; // vui
 @link-hover-color       : tint(@link-color, 20%);
 @link-active-color      : shade(@link-color, 5%);
+@disable-color          : #f5f5f5; // vui add
 @selected-color         : fade(@primary-color, 90%);
-@tooltip-color          : #fff;
+@tooltip-color          : @text-info-color;
 @subsidiary-color       : #80848f;
 @rate-star-color        : #f5a623;
 
@@ -21,7 +22,9 @@
 @font-family            : "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 @code-family            : Consolas,Menlo,Courier,monospace;
 @title-color            : #1c2438;
-@text-color             : #495060;
+@text-color             : #333333; // vui
+@text-info-color        : #6c6c6c; // vui
+@text-content-color     : #9c9c9c; // vui
 @font-size-base         : 14px;
 @font-size-small        : 12px;
 @line-height-base       : 1.5;
@@ -37,12 +40,12 @@
 // Background color
 @background-color-base        : #f7f7f7;  // base
 @background-color-select-hover: @input-disabled-bg;
-@tooltip-bg                   : rgba(70, 76, 91, .9);
-@head-bg                      : #f9fafc;
-@table-thead-bg               : #f8f8f9;
-@table-td-stripe-bg           : #f8f8f9;
-@table-td-hover-bg            : #ebf7ff;
-@table-td-highlight-bg        : #ebf7ff;
+@tooltip-bg                   : #ffffff; // vui
+@head-bg                      : #009ACE; // vui
+@table-thead-bg               : #f5f5f5; // vui
+@table-td-stripe-bg           : #FAFAFA; // vui
+@table-td-hover-bg            : #E5F4FA; // vui
+@table-td-highlight-bg        : #E5F4FA; // vui
 @menu-dark-title              : #495060;
 @menu-dark-active-bg          : #363e4f;
 @menu-dark-subsidiary-color   : rgba(255,255,255,.7);
@@ -60,17 +63,17 @@
 
 // Button
 @btn-font-weight        : normal;
-@btn-padding-base       : 6px 15px;
-@btn-padding-large      : 6px 15px 7px 15px;
+@btn-padding-base       : 5px 15px; // vui
+@btn-padding-large      : 8px 20px 9px 20px; // vui
 @btn-padding-small      : 2px 7px;
 @btn-font-size          : 12px;
 @btn-font-size-large    : 14px;
-@btn-border-radius      : 4px;
-@btn-border-radius-small: 3px;
+@btn-border-radius      : 0; // vui
+@btn-border-radius-small: 0; // vui
 @btn-group-border       : shade(@primary-color, 5%);
 
-@btn-disable-color      : #bbbec4;
-@btn-disable-bg         : @background-color-base;
+@btn-disable-color      : #9c9c9c; // vui
+@btn-disable-bg         : @disable-color; // vui
 @btn-disable-border     : @border-color-base;
 
 @btn-default-color      : @text-color;
@@ -96,9 +99,9 @@
 @legend-color           : #999;
 
 // Input
-@input-height-base           : 32px;
-@input-height-large          : 36px;
-@input-height-small          : 24px;
+@input-height-base           : 30px; // vui
+@input-height-large          : 40px; // vui
+@input-height-small          : 28px; // vui
 
 @input-padding-horizontal    : 7px;
 @input-padding-vertical-base : 4px;
@@ -112,7 +115,7 @@
 
 @input-hover-border-color    : @primary-color;
 @input-focus-border-color    : @primary-color;
-@input-disabled-bg           : #f3f3f3;
+@input-disabled-bg           : @disable-color; // vui
 
 // Tag
 @tag-font-size          : 12px;

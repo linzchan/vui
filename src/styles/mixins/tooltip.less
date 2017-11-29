@@ -1,4 +1,4 @@
-.popper(@arrow, @arrow-width, @arrow-distance, @bg){
+.popper(@arrow, @arrow-width, @arrow-big-width, @arrow-distance, @bg){
     display: block;
     visibility: visible;
     font-size: @font-size-small;
@@ -23,6 +23,11 @@
         bottom: @arrow-distance - @arrow-width;
         border-width: @arrow-width @arrow-width 0;
         border-top-color: @bg;
+        &-big {
+            bottom: @arrow-distance - @arrow-width - 1px;
+            border-width: @arrow-big-width @arrow-big-width 0;
+            border-top-color: @border-color-base;
+        }
     }
     &[x-placement="top"] .@{arrow} {
         left: 50%;
@@ -39,6 +44,11 @@
         left: @arrow-distance - @arrow-width;
         border-width: @arrow-width @arrow-width @arrow-width 0;
         border-right-color: @bg;
+        &-big {
+            left: @arrow-distance - @arrow-width - 1px;
+            border-width: @arrow-big-width @arrow-big-width @arrow-big-width 0;
+            border-right-color: @border-color-base;
+        }
     }
     &[x-placement="right"] .@{arrow} {
         top: 50%;
@@ -55,6 +65,11 @@
         right: @arrow-distance - @arrow-width;
         border-width: @arrow-width 0 @arrow-width @arrow-width;
         border-left-color: @bg;
+        &-big {
+            right: @arrow-distance - @arrow-width - 1px;
+            border-width: @arrow-big-width 0 @arrow-big-width @arrow-big-width;
+            border-left-color: @border-color-base;
+        }
     }
     &[x-placement="left"] .@{arrow} {
         top: 50%;
@@ -71,6 +86,11 @@
         top: @arrow-distance - @arrow-width;
         border-width: 0 @arrow-width @arrow-width;
         border-bottom-color: @bg;
+        &-big {
+            top: @arrow-distance - @arrow-width - 1px;
+            border-width: 0 @arrow-big-width @arrow-big-width;
+            border-bottom-color: @border-color-base;
+        }
     }
     &[x-placement="bottom"] .@{arrow} {
         left: 50%;

@@ -13,6 +13,7 @@
                 :data-transfer="transfer"
                 v-transfer-dom>
                 <div :class="[prefixCls + '-content']">
+                    <div :class="[prefixCls + '-arrow', prefixCls + '-arrow-big']"></div>
                     <div :class="[prefixCls + '-arrow']"></div>
                     <div :class="[prefixCls + '-inner']"><slot name="content">{{ content }}</slot></div>
                 </div>
