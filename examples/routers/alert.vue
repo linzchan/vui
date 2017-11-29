@@ -32,7 +32,7 @@
     </div>
 </template>
 <script>
-    import { Alert, Icon } from 'iview';
+    import { Alert, Icon } from 'vvicui';
     export default {
         components: { Alert, Icon }
     }

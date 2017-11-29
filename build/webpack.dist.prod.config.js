@@ -13,8 +13,8 @@ module.exports = merge(webpackBaseConfig, {
     output: {
         path: path.resolve(__dirname, '../dist'),
         publicPath: '/dist/',
-        filename: 'iview.min.js',
-        library: 'iview',
+        filename: 'vui.min.js',
+        library: 'vui',
         libraryTarget: 'umd',
         umdNamedDefine: true
     },
