@@ -1,6 +1,6 @@
 {
   "name": "vvicui",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "title": "vvicui",
   "description": "VVIC UI components Library with Vue.js",
   "homepage": "http://ui.vvic.com",
@@ -18,7 +18,7 @@
     "src"
   ],
   "scripts": {
-    "dev": "webpack-dev-server --content-base test/ --open --inline --hot --compress --history-api-fallback --port 7081 --config build/webpack.dev.config.js",
+    "dev": "webpack-dev-server --content-base test/ --open --inline --hot --compress --history-api-fallback --port 7082 --config build/webpack.dev.config.js",
     "dist:style": "gulp --gulpfile build/build-style.js",
     "dist:dev": "webpack --config build/webpack.dist.dev.config.js",
     "dist:prod": "webpack --config build/webpack.dist.prod.config.js",

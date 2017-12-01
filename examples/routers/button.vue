@@ -91,6 +91,8 @@
             <Button type="ghost">Small</Button>
             <Button type="ghost">Small</Button>
         </Button-group>
+
+        <Button type="text">查看详细</Button>
     </div>
 </template>
 <script>

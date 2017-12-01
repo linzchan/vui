@@ -145,24 +145,25 @@
 
     // card style
     &&-card > &-bar &-nav-container {
-        height: 32px;
+        height: 38px;
     }
     &&-card > &-bar &-ink-bar {
         visibility: hidden;
     }
     &&-card > &-bar &-tab {
         margin: 0;
-        margin-right: 4px;
-        height: 31px;
-        padding: 5px 16px 4px;
+        margin-right: -1px;
+        height: 37px;
+        padding: 9px 16px 0;
         border: 1px solid @border-color-base;
         border-bottom: 0;
         border-radius: @btn-border-radius @btn-border-radius 0 0;
         transition: all 0.3s @ease-in-out;
         background: @table-thead-bg;
+        font-size: 12px;
     }
     &&-card > &-bar &-tab-active {
-        height: 32px;
+        height: 38px;
         padding-bottom: 5px;
         background: #fff;
         transform: translateZ(0);
